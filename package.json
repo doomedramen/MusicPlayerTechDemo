@@ -1,0 +1,28 @@
+{
+  "name": "music-player-tech-demo",
+  "version": "1.0.0",
+  "description": "browserify public/js/main.src.js -o public/js/main.js",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^13.1.0"
+  },
+  "devDependencies": {
+    "get-pixels": "^3.3.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookoouk/MusicPlayerTechDemo.git"
+  },
+  "authors": [
+    "Martin Page <wookoouk@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wookoouk/MusicPlayerTechDemo/issues"
+  },
+  "homepage": "https://github.com/wookoouk/MusicPlayerTechDemo#readme"
+}

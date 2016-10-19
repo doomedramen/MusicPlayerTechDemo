@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "browserify public/js/main.src.js -o public/js/main.js",
   "main": "index.js",
-  "dependencies": {
-    "browserify": "^13.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browserify": "^13.1.0",
     "get-pixels": "^3.3.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-less": "^3.1.0",
+    "jquery": "^3.1.1",
+    "node-album-color": "^1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

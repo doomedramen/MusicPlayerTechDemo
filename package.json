@@ -11,7 +11,9 @@
     "gulp-browserify": "^0.5.1",
     "gulp-less": "^3.1.0",
     "jquery": "^3.1.1",
-    "node-album-color": "^1.0.2"
+    "node-album-color": "^1.0.2",
+    "normalize.css": "^5.0.0",
+    "simple-line-icons": "^2.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

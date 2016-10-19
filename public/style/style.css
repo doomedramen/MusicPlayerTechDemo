@@ -1,0 +1,90 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/simple-line-icons/css/simple-line-icons.css";
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.player {
+  width: 300px;
+}
+.player .artwork,
+.player .artwork img {
+  width: 100%;
+  display: block;
+}
+.player .controls .progress {
+  height: 8px;
+}
+.player .controls .progress .bar {
+  height: inherit;
+  width: 30%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.player .controls .artist {
+  width: 40px;
+  height: 40px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  margin-top: -28px;
+  margin-right: 8px;
+  position: absolute;
+  left: 240px;
+}
+.player .controls .artist img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.player .controls .text {
+  margin-top: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.player .controls .text span {
+  display: block;
+}
+.player .controls .text .song-name {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.player .controls .text .album-name {
+  font-weight: 100;
+}
+.player .controls .buttons {
+  display: block;
+  padding-bottom: 20px;
+  width: 208px;
+  margin: 0 auto;
+}
+.player .controls .buttons .button {
+  position: relative;
+  border-radius: 50%;
+  font-size: 38.4px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+.player .controls .buttons .button.play {
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+  border: 5px solid black;
+  line-height: 88px;
+}
+.player .controls .buttons .button.skip {
+  opacity: 0.8;
+  z-index: 5;
+  width: 64px;
+  height: 64px;
+  line-height: 70.4px;
+  margin: 10px 0;
+}
+.player .controls .buttons .button.skip:first-of-type {
+  margin-right: -10px;
+}
+.player .controls .buttons .button.skip:last-of-type {
+  margin-left: -10px;
+}

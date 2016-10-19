@@ -3,9 +3,13 @@ var less = require('gulp-less');
 var browserify = require('gulp-browserify');
 
 gulp.task('less', function () {
-    return gulp.src('src/style/*.less')
-        .pipe(less())
-        .pipe(gulp.dest('public/style/'));
+    try {
+        return gulp.src('src/style/*.less')
+            .pipe(less())
+            .pipe(gulp.dest('public/style/'));
+    } catch (err) {
+
+    }
 });
 
 gulp.task('browserify', function () {

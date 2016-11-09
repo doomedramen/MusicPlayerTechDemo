@@ -1,12 +1,27 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/simple-line-icons/css/simple-line-icons.css";
+* {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 html,
 body {
   margin: 0;
   padding: 0;
 }
 .player {
+  overflow: hidden;
+  display: none;
   width: 300px;
+}
+.player .artwork {
+  position: relative;
 }
 .player .artwork,
 .player .artwork img {

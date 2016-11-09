@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var browserify = require('gulp-browserify');
+var rename = require("gulp-rename");
 
 gulp.task('less', function () {
     try {
@@ -14,11 +15,14 @@ gulp.task('less', function () {
 
 gulp.task('browserify', function () {
     try {
-        // Single entry point to browserify
-        gulp.src('src/js/main.js')
+        gulp.src('src/js/app.jsx')
             .pipe(browserify({
-                // insertGlobals : true,
-                // debug : !gulp.env.production
+                "transform": [
+                    ["reactify", {"es6": true}]
+                ]
+            }))
+            .pipe(rename(function (path) {
+                path.extname = ".js"
             }))
             .pipe(gulp.dest('public/js/'));
     } catch (err) {
@@ -28,7 +32,7 @@ gulp.task('browserify', function () {
 
 gulp.task('watch', function () {
     gulp.watch('src/style/*.less', ['less']);
-    gulp.watch('src/js/*.js', ['browserify']);
+    gulp.watch('src/js/*.*', ['browserify']);
 });
 
 gulp.task('default', ['watch']);

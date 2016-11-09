@@ -5,14 +5,17 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^13.1.0",
-    "get-pixels": "^3.3.0",
+    "React": "latest",
+    "React-dom": "latest",
     "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
+    "gulp-browserify": "latest",
     "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "hammerjs": "^2.0.8",
     "jquery": "^3.1.1",
     "node-album-color": "^1.0.2",
     "normalize.css": "^5.0.0",
+    "reactify": "^1.1.1",
     "simple-line-icons": "^2.4.1"
   },
   "scripts": {
